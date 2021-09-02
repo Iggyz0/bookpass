@@ -1,0 +1,323 @@
+/*Main CSS file*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#mainContainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 1000px;
+    overflow-y: auto;
+    padding: 8px;
+
+    background-attachment: fixed;
+    background-image: /*url('../img/background5.jpg'); */ radial-gradient(white 1%, rgb(51, 173, 255) 25%, rgb(49, 45, 45) 98%);
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-size: cover;
+    background-color: hsla(0,0%,100%,0.00); /* change 'a' property to control opacity */
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+}
+
+#mainBarTop {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    width: 100%;
+    height: 30px;
+}
+
+#mainBarTop a:hover, #navigationList a:hover, #midNav a:hover, .footer a:hover {
+    color: rgb(194, 214, 214);
+}
+
+#welcomeText {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcomeText > p, #mainBarTop > ul > li > p {
+    color: white;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 30px;
+}
+
+#mainBarTop > ul, .footer > ul, #navigationList > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#indexForm {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainBarTop > ul > li {
+    margin-right: 10px;
+}
+
+.footer > ul > li {
+    margin-left: 10px;
+}
+
+#mainBarTop > ul > li > p {
+    text-transform: unset;
+    margin: 0px !important;
+}
+
+#mainBarTop > ul > li > a, .footer > ul > li > a, #navigationList > ul > form > li > button > i,p {
+    margin-top: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#midBelt {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    /*height: calc(100vh + 250px);*/
+    min-height: 1000px;
+}
+
+#navigationList > ul > form > li > button {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    text-align: center;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+#navigationList > ul > form > li > button > i {
+    font-size: 32px !important;
+}
+
+#logo {
+    max-width: 800px;
+    height: auto;
+}
+
+#logo > img {
+    max-width: 800px;
+    height: 110px;
+}
+
+#searchForm {
+    min-width: 666px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+#searchBar {
+    width: 600px;
+    height: 46px;
+    border: 1px solid black;
+    border-right: 0px !important;
+}
+
+#formSearch input[type=text] {
+    padding: 6px;
+    font-size: 20px;
+}
+
+#searchButton {
+    float: right;
+    padding: 7px 7px;
+    background: #ddd;
+    font-size: 24px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-left: 0px !important;
+}
+
+.fa {
+    line-height: 0;
+}
+
+#midNav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#midNav > ul > li, #navigationList > ul > form > li {
+    margin: 10px;
+    margin-right: 10px;
+}
+
+#midNav > ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#featuredText {
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.featured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    height: auto;
+    background: radial-gradient(ellipse at center, rgba(181,181,181,0.65) 0%,rgba(181,181,181,0) 100%);
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.buttonContainer:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.buttonContainer > p {
+    color: black;
+    font-weight: bold;
+}
+
+.rightButtonFeatured {
+    margin-left: 15px;
+}
+
+.leftButtonFeatured {
+    margin-right: 15px;
+}
+
+.bookItem {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    width: 180px;
+    height: 300px;
+}
+
+.bookItem:hover {
+    opacity: 95%;
+}
+
+.bookItem > img {
+    width: 125px;
+    height: auto; /* 152px */
+}
+
+.bookItem > p {
+    padding: 2px;
+    margin-top: 2px;
+}
+
+.bookItem > p > .fa-star {
+    color: yellow;
+}
+
+.bookTitle {
+    font-weight: bold;
+}
+
+.bookAuthor {
+    font-style: italic;
+}
+
+#announcements {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: auto;
+}
+
+#announcements > p {
+    text-align: center;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#announcements > P:first-child {
+    text-transform: uppercase;
+}
+
+hr {
+    width: 900px;
+    margin-top: 20px;
+}
+
+/* --------------- W3 Slider -----------------*/
+
+.mySlides {
+    display:none;
+    width: 800px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+    opacity: 90%;
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}

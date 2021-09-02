@@ -1,0 +1,356 @@
+/*Browse CSS file*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contentContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; /* align items to center ~ margin 0 auto */
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.topBar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+
+.logoMini {
+    height: 40px;
+}
+
+.logoMini > a > img {
+    height: 40px;
+    object-fit: cover;
+}
+
+#searchForm {
+    min-width: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+#searchBar {
+    width: 600px;
+    min-width: 600px;
+    height: 35px;
+    border: 1px solid black;
+    border-right: 0px !important;
+}
+
+#formSearch input[type=text] {
+    padding: 6px;
+    font-size: 18px;
+}
+#formSearch {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#searchButton {
+    float: right;
+    padding: 6px 6px;
+    background: #ddd;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-left: 0px !important;
+}
+/*
+.profileMenu {
+    width: 200px;
+    min-width: 200px;
+}
+*/
+.profileMenu > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.profileMenu > ul > li {
+    margin-right: 10px;
+}
+
+.profileMenu > ul > li > a,p {
+    text-decoration: none;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.profileMenu > ul > li > a:hover {
+    color: rgb(194, 214, 214);
+}
+
+/* -------------------------------- MID CONTENT -------------------------------- */
+
+.midContent {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    min-height: 1000px;
+    background-image: radial-gradient(white 1%, rgb(51, 173, 255) 25%, rgb(49, 45, 45) 98%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.midOptions {
+    /*display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;*/
+    width: 15%;
+    height: auto;
+    min-height: 1000px;
+    border-right: 1px solid rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+
+.optionBox {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#formFilters {
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#formFilters > ul {
+    width: 100%;
+    list-style-type: none;
+}
+
+#formFilters > ul > li {
+    margin-top: 5px;
+    margin-left: 13px
+}
+
+.filters {
+    margin-left: 5px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.filterNames {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#filterButton {
+    padding: 5px 2px;
+    margin-top: 10px;
+    justify-self: center;
+    align-self: center;
+}
+
+.midBrowsing {
+    width: 85%;
+    height: auto;
+    min-height: 1000px;
+    /*background-color: grey;*/
+}
+
+.browsingInfo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+}
+
+.browsingInfo > p {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.browsingResults {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.noResultP {
+    margin-left: 20px;
+}
+
+.browsingItem {
+    display: flex;
+    width: 230px;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: linear-gradient(to right, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.browsingItem > img {
+    height: 200px;
+    border-radius: 2px;
+}
+
+.browsingItemTitle {
+    font-weight: bold;
+}
+
+.buyForm > button {
+    padding: 5px 24px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgb(0, 102, 255);
+    color: white;
+}
+
+.buyForm > button:hover {
+    cursor: pointer;
+    background-color: rgb(77, 148, 255);
+}
+
+.reviewItem {
+    display: flex;
+    width: 230px;
+    justify-content: flex-start;
+}
+
+.reviewButton {
+    padding: 2px 3px;
+    margin-top: 2px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.reviewButton:hover {
+    background-color: ivory;
+}
+
+/*     ------------------    FOOTER   ------------------         */
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background-color: blue;
+}
+
+.socList {
+    display: flex;
+    flex-flow: row nowrap;
+	width: 250px;
+	height: 40px;
+}
+
+.socListUl {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.socListUl > li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+	list-style: none;
+}
+.socList li, .socList a {
+	height: 40px;
+}
+
+.socList li a {
+    width: 50px;
+}
+
+.liFb {
+	/*left: 0px;*/
+	width: 50px;
+	background: url('../img/soc-img-sprite.png') 0 -4px;
+}
+.liTw {
+	/*left: 53px;*/
+	width: 50px;
+	background: url('../img/soc-img-sprite.png') -400px -4px;
+}
+.liYt {
+	/*left: 106px;*/
+	width: 50px;
+	background: url('../img/soc-img-sprite.png') -500px -4px;
+}
+.liFb:hover {
+	background: url('../img/soc-img-sprite.png') 0 -54px;
+}
+.liTw:hover {
+	background: url('../img/soc-img-sprite.png') -400px -54px;
+}
+.liYt:hover {
+	background: url('../img/soc-img-sprite.png') -500px -54px;
+}
+/*
+.author {
+	width: 313px;
+	margin: 0 auto;
+}
+*/
+.author > p {
+	color: white;
+}
+.privacyPolicy {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+	width: 250px;
+	height: 40px;
+	overflow: hidden;
+	/*float: right;*/
+}
+.privacyPolicy > p {
+	padding-right: 10px;
+}
+.privacyPolicy > p > a {
+	/*width: 100px;*/
+	height: 40px;
+	overflow: hidden;
+	text-decoration: none;
+	color: white;
+}
+.privacyPolicy > p > a:hover {
+	color: #c2c2c2;
+}
+
